@@ -893,8 +893,8 @@ video {
 .hidden {
   display: none;
 }
-.aspect-\[4\/3\] {
-  aspect-ratio: 4/3;
+.aspect-\[16\/11\] {
+  aspect-ratio: 16/11;
 }
 .h-2 {
   height: 0.5rem;
@@ -968,9 +968,6 @@ video {
 }
 .animate-pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;

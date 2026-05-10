@@ -11,6 +11,11 @@ const roboto = Roboto({ subsets: ["latin"], variable: "--font-roboto", weight: [
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png"
+  },
   title: {
     default: "Wow Tex | Premium Digital Experiences",
     template: "%s | Wow Tex"

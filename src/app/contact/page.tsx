@@ -40,10 +40,10 @@ export default function ContactPage() {
         <Card className="space-y-4">
           <p className="text-lg font-semibold">Contact Information</p>
           <p className="text-textSecondary">Address: Dhaka, Bangladesh</p>
-          <p className="text-textSecondary">Email: hello@wowtex.co</p>
-          <p className="text-textSecondary">Phone: +880 1XXX-XXXXXX</p>
+          <p className="text-textSecondary">Email: wowtexbd@gmail.com</p>
+          <p className="text-textSecondary">Phone: +880 1760275077</p>
           <div className="relative h-72 overflow-hidden rounded-2xl border border-white/10">
-            <Image src="/contact-visual.svg" alt="Wow Tex location visual" fill className="object-cover" />
+            <Image src="/contact-visual.png" alt="Wow Tex location visual" fill className="object-cover" />
           </div>
         </Card>
       </div>

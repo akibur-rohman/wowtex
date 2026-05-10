@@ -39,18 +39,8 @@ export default function HomePage() {
               </Button>
             </div>
           </div>
-          <div className="relative grid grid-cols-3 gap-4">
-            {[
-              { label: "Laptop Mockup", image: "/device-laptop.svg" },
-              { label: "Phone Mockup", image: "/device-phone.svg" },
-              { label: "Tablet Mockup", image: "/device-tablet.svg" }
-            ].map((item) => (
-              <Card key={item.label} className="animate-float p-4 text-center [animation-delay:0.2s]">
-                <div className="relative mx-auto aspect-[4/3] w-full overflow-hidden rounded-xl">
-                  <Image src={item.image} alt={item.label} fill className="object-cover" />
-                </div>
-              </Card>
-            ))}
+          <div className="relative mx-auto aspect-[16/11] w-full animate-float overflow-hidden rounded-xl [animation-delay:0.2s]">
+            <Image src="/hero-device.png" alt="Hero device mockup" fill className="object-cover" />
           </div>
         </div>
       </section>

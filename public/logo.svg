@@ -1,6 +1,0 @@
-<svg width="640" height="180" viewBox="0 0 640 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="640" height="180" rx="28" fill="#050816"/>
-  <path d="M28 40H72L112 130L152 40H196L124 160H100L28 40Z" fill="#00BFFF"/>
-  <text x="220" y="116" fill="white" font-family="Arial" font-size="76" font-weight="700">Wow Tex</text>
-  <rect x="222" y="132" width="220" height="6" rx="3" fill="#39FF14"/>
-</svg>

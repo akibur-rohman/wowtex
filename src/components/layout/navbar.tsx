@@ -27,7 +27,7 @@ export function Navbar() {
         )}
       >
         <Link href="/" className="relative h-9 w-32">
-          <Image src="/logo.svg" alt="Wow Tex logo" fill className="object-contain object-left" priority />
+          <Image src="/logo.png" alt="Wow Tex logo" fill className="object-contain object-left" priority />
         </Link>
         <div className="hidden items-center gap-6 md:flex">
           {navLinks.map((item) => (
