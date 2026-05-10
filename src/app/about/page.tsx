@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { AnimatedHeading } from "@/components/ui/animated-heading";
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 import { Card } from "@/components/ui/card";
@@ -29,7 +30,9 @@ export default function AboutPage() {
         <div className="mt-8 grid gap-5 md:grid-cols-3">
           {team.map((member) => (
             <Card key={member.name} className="text-center hover:-translate-y-1">
-              <div className="mx-auto h-20 w-20 rounded-full bg-gradient-to-br from-accentBlue/40 to-accentGreen/30" />
+              <div className="relative mx-auto h-20 w-20 overflow-hidden rounded-full border border-white/20">
+                <Image src={member.image} alt={`${member.name} avatar`} fill className="object-cover" />
+              </div>
               <p className="mt-4 font-bold">{member.name}</p>
               <p className="text-sm text-textSecondary">{member.role}</p>
             </Card>

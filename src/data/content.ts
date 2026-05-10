@@ -38,10 +38,10 @@ export const pricing = [
 ];
 
 export const portfolioItems = [
-  { id: "p1", title: "Fintech Dashboard", category: "Web", image: "/portfolio-1.svg", tools: ["Next.js", "Tailwind", "Charting"], link: "#" },
-  { id: "p2", title: "Health Mobile App", category: "Apps", image: "/portfolio-2.svg", tools: ["Flutter", "Firebase"], link: "#" },
-  { id: "p3", title: "SaaS Brand System", category: "Design", image: "/portfolio-3.svg", tools: ["Figma", "Illustrator"], link: "#" },
-  { id: "p4", title: "Ecommerce Experience", category: "Web", image: "/portfolio-4.svg", tools: ["Next.js", "Stripe"], link: "#" }
+  { id: "p1", title: "Fintech Dashboard", category: "Web", image: "/portfolio-1.png", tools: ["Next.js", "Tailwind", "Charting"], link: "#" },
+  { id: "p2", title: "Health Mobile App", category: "Apps", image: "/portfolio-2.png", tools: ["Flutter", "Firebase"], link: "#" },
+  { id: "p3", title: "SaaS Brand System", category: "Design", image: "/portfolio-3.png", tools: ["Figma", "Illustrator"], link: "#" },
+  { id: "p4", title: "Ecommerce Experience", category: "Web", image: "/portfolio-4.png", tools: ["Next.js", "Stripe"], link: "#" }
 ];
 
 export const testimonials = [
@@ -58,7 +58,7 @@ export const timeline = [
 ];
 
 export const team = [
-  { name: "Nabil Hasan", role: "Creative Director" },
-  { name: "Rima Akter", role: "Lead Product Designer" },
-  { name: "Adnan Fahim", role: "Senior Full-Stack Engineer" }
+  { name: "Nabil Hasan", role: "Creative Director", image: "/team-1.svg" },
+  { name: "Rima Akter", role: "Lead Product Designer", image: "/team-2.svg" },
+  { name: "Adnan Fahim", role: "Senior Full-Stack Engineer", image: "/team-3.svg" }
 ];

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { navLinks } from "@/data/content";
@@ -25,8 +26,8 @@ export function Navbar() {
           scrolled ? "bg-secondary/60 backdrop-blur-xl" : "bg-transparent"
         )}
       >
-        <Link href="/" className="font-heading text-lg font-bold tracking-wide">
-          Wow<span className="text-gradient">Tex</span>
+        <Link href="/" className="relative h-9 w-32">
+          <Image src="/logo.svg" alt="Wow Tex logo" fill className="object-contain object-left" priority />
         </Link>
         <div className="hidden items-center gap-6 md:flex">
           {navLinks.map((item) => (

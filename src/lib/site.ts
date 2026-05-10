@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Wow Tex",
   description: "We build websites, apps, and design systems engineered for growth.",
   url: "https://wowtex.example",
-  ogImage: "/og-image.svg"
+  ogImage: "/og-image.png"
 };
 
 export const motionConfig = {

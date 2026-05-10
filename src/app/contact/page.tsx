@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { AnimatedHeading } from "@/components/ui/animated-heading";
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 import { Button } from "@/components/ui/button";
@@ -41,7 +42,9 @@ export default function ContactPage() {
           <p className="text-textSecondary">Address: Dhaka, Bangladesh</p>
           <p className="text-textSecondary">Email: hello@wowtex.co</p>
           <p className="text-textSecondary">Phone: +880 1XXX-XXXXXX</p>
-          <div className="h-72 rounded-2xl border border-white/10 bg-gradient-to-br from-accentBlue/20 to-accentGreen/10" />
+          <div className="relative h-72 overflow-hidden rounded-2xl border border-white/10">
+            <Image src="/contact-visual.svg" alt="Wow Tex location visual" fill className="object-cover" />
+          </div>
         </Card>
       </div>
     </SectionWrapper>

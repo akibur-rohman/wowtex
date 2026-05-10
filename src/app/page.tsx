@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { Smartphone, Globe, Palette } from "lucide-react";
+import Image from "next/image";
 import { AnimatedHeading } from "@/components/ui/animated-heading";
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 import { Button } from "@/components/ui/button";
@@ -39,9 +40,15 @@ export default function HomePage() {
             </div>
           </div>
           <div className="relative grid grid-cols-3 gap-4">
-            {["Laptop", "Phone", "Tablet"].map((label) => (
-              <Card key={label} className="animate-float p-8 text-center [animation-delay:0.2s]">
-                <p className="font-heading text-xl">{label}</p>
+            {[
+              { label: "Laptop Mockup", image: "/device-laptop.svg" },
+              { label: "Phone Mockup", image: "/device-phone.svg" },
+              { label: "Tablet Mockup", image: "/device-tablet.svg" }
+            ].map((item) => (
+              <Card key={item.label} className="animate-float p-4 text-center [animation-delay:0.2s]">
+                <div className="relative mx-auto aspect-[4/3] w-full overflow-hidden rounded-xl">
+                  <Image src={item.image} alt={item.label} fill className="object-cover" />
+                </div>
               </Card>
             ))}
           </div>
