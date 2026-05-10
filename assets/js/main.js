@@ -32,7 +32,6 @@
     });
   }
 
-  // Active nav link (works on static hosts)
   const path = (window.location.pathname || "/").replace(/\/+$/, "") || "/";
   const navAnchors = document.querySelectorAll("a[data-nav]");
   navAnchors.forEach((a) => {
@@ -44,12 +43,11 @@
     }
   });
 
-  // Contact helper: build mailto from form fields (optional)
   const mailForm = document.querySelector("[data-mailto-form]");
   if (mailForm instanceof HTMLFormElement) {
     mailForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      const email = mailForm.getAttribute("data-mailto") || "hello@wowtex.com";
+      const email = mailForm.getAttribute("data-mailto") || "wowtexbd@gmail.com";
       const name = mailForm.querySelector("[name='name']")?.value?.trim() || "";
       const company = mailForm.querySelector("[name='company']")?.value?.trim() || "";
       const service = mailForm.querySelector("[name='service']")?.value?.trim() || "";
@@ -72,5 +70,27 @@
 
       window.location.href = mailto;
     });
+  }
+
+  /* Scroll reveals */
+  const revealEls = document.querySelectorAll("[data-reveal]");
+  if (revealEls.length) {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduceMotion) {
+      revealEls.forEach((el) => el.classList.add("is-inview"));
+    } else {
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-inview");
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { rootMargin: "0px 0px -12% 0px", threshold: 0.08 }
+      );
+      revealEls.forEach((el) => io.observe(el));
+    }
   }
 })();

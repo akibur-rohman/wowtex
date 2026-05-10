@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Page not found — Wow Tex" />
     <title>404 — Wow Tex</title>
-    <meta name="theme-color" content="#0b1220" />
+    <meta name="theme-color" content="#fafbfc" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0c1222" media="(prefers-color-scheme: dark)" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
     <script defer src="assets/js/main.js"></script>
   </head>
   <body>
     <header class="site-header">
       <div class="container nav">
         <a class="brand" href="index.html" aria-label="Wow Tex home">
-          <span class="brand-mark" aria-hidden="true">W</span>
+          <img class="brand-img" src="assets/img/wowtex.png" width="36" height="36" alt="" />
           <span class="brand-name">Wow Tex</span>
         </a>
         <div class="nav-actions">
@@ -26,7 +27,7 @@
     <main>
       <section class="hero">
         <div class="container hero-wrap">
-          <div class="stack">
+          <div class="stack" data-reveal>
             <span class="pill"><span class="dot" aria-hidden="true"></span>404</span>
             <p class="kicker">Not found</p>
             <h1 class="h1">This page doesn’t exist.</h1>
@@ -36,7 +37,7 @@
               <a class="btn btn-ghost" href="services.html">Services</a>
             </div>
           </div>
-          <aside class="hero-card" aria-label="Helpful links">
+          <aside class="hero-aside" aria-label="Helpful links">
             <p class="kicker">Try these</p>
             <div class="stack">
               <a class="btn" href="about.html">About</a>

@@ -1,172 +1,179 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Contact Wow Tex — websites, apps, and graphic design. Send an email and we’ll respond quickly." />
-    <title>Contact — Wow Tex</title>
 
-    <meta property="og:title" content="Contact — Wow Tex" />
-    <meta property="og:description" content="Tell us what you’re building. We’ll reply with next steps and a quick estimate." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="./contact.html" />
-    <meta property="og:image" content="assets/img/og-image.svg" />
-    <meta name="theme-color" content="#0b1220" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Contact Wow Tex — websites, apps, and graphic design. Send an email and we’ll respond quickly." />
+  <title>Contact — Wow Tex</title>
 
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
-    <script defer src="assets/js/main.js"></script>
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container nav">
-        <a class="brand" href="index.html" aria-label="Wow Tex home">
-          <span class="brand-mark" aria-hidden="true">W</span>
+  <meta property="og:title" content="Contact — Wow Tex" />
+  <meta property="og:description"
+    content="Tell us what you’re building. We’ll reply with next steps and a quick estimate." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="./contact.html" />
+  <meta property="og:image" content="assets/img/og-image.png" />
+  <meta name="theme-color" content="#fafbfc" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0c1222" media="(prefers-color-scheme: dark)" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Wow Tex home">
+        <img class="brand-img" src="assets/img/wowtex.png" width="36" height="36" alt="" />
+        <span class="brand-name">Wow Tex</span>
+      </a>
+
+      <nav aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-links" data-nav-links>
+          <a href="index.html" data-nav>Home</a>
+          <a href="services.html" data-nav>Services</a>
+          <a href="about.html" data-nav>About</a>
+          <a href="contact.html" data-nav>Contact</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="mailto:wowtexbd@gmail.com?subject=Project%20Inquiry">Email us</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-wrap">
+        <div class="stack">
+          <span class="pill"><span class="dot" aria-hidden="true"></span>Contact</span>
+          <p class="kicker">Let’s talk</p>
+          <h1 class="h1">Tell us what you’re building.</h1>
+          <p class="lead">Send a short message and we’ll respond with next steps and a quick estimate.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:wowtexbd@gmail.com?subject=Project%20Inquiry">Email:
+              wowtexbd@gmail.com</a>
+            <a class="btn btn-ghost" href="services.html">View services</a>
+          </div>
+        </div>
+
+        <aside class="hero-aside" aria-label="Quick notes">
+          <p class="kicker">Good to include</p>
+          <ul class="muted" style="margin: 0; padding-left: 18px">
+            <li>Your business and goals</li>
+            <li>Which service you need</li>
+            <li>Examples you like (optional)</li>
+            <li>Timeline and budget range (optional)</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Message builder">
+      <div class="container">
+        <div class="split">
+          <div class="stack" style="max-width: 70ch">
+            <p class="kicker">Message builder</p>
+            <h2 class="h2">Prefer a quick template?</h2>
+            <p class="lead">Fill this in and your email app will open with a ready-to-send message.</p>
+          </div>
+          <div>
+            <a class="btn" href="mailto:wowtexbd@gmail.com?subject=Project%20Inquiry">Open email app</a>
+          </div>
+        </div>
+
+        <div class="grid grid-2" style="margin-top: 18px">
+          <form class="card" data-mailto-form data-mailto="wowtexbd@gmail.com">
+            <div class="card-body stack">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" autocomplete="name" placeholder="Your name" />
+              </div>
+              <div class="field">
+                <label for="company">Company (optional)</label>
+                <input id="company" name="company" autocomplete="organization" placeholder="Your company" />
+              </div>
+              <div class="field">
+                <label for="service">Service</label>
+                <input id="service" name="service"
+                  placeholder="Website Development / App Development / Graphic Design" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6"
+                  placeholder="Describe what you want to build…"></textarea>
+              </div>
+              <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center">
+                <button class="btn btn-primary" type="submit">Build email</button>
+                <a class="btn btn-ghost" href="mailto:wowtexbd@gmail.com">Just email</a>
+              </div>
+
+            </div>
+          </form>
+
+          <div class="card">
+            <div class="card-body stack">
+              <h3 class="card-title">Direct contact</h3>
+              <p class="card-text">Email is the fastest way to reach us.</p>
+              <div class="stack">
+                <div class="metric">
+                  <strong>Email</strong>
+                  <span><a href="mailto:wowtexbd@gmail.com">wowtexbd@gmail.com</a></span>
+                </div>
+                <div class="metric">
+                  <strong>Response time</strong>
+                  <span>Typically within 24–48 hours</span>
+                </div>
+                <div class="metric">
+                  <strong>Services</strong>
+                  <span>Websites • Apps • Graphic Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="stack">
+        <div class="brand">
+          <img class="brand-img" src="assets/img/wowtex.png" width="36" height="36" alt="" />
           <span class="brand-name">Wow Tex</span>
-        </a>
-
-        <nav aria-label="Primary">
-          <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
-            <span aria-hidden="true"></span>
-          </button>
-
-          <div class="nav-links" data-nav-links>
-            <a href="index.html" data-nav>Home</a>
-            <a href="services.html" data-nav>Services</a>
-            <a href="about.html" data-nav>About</a>
-            <a href="contact.html" data-nav>Contact</a>
-          </div>
-        </nav>
-
-        <div class="nav-actions">
-          <a class="btn btn-primary" href="mailto:hello@wowtex.com?subject=Project%20Inquiry">Email us</a>
         </div>
+        <p class="muted" style="margin: 0">Websites, apps, and graphic design for modern startups.</p>
+        <p class="fineprint" style="margin: 0">Email: <a href="mailto:wowtexbd@gmail.com">wowtexbd@gmail.com</a></p>
       </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="container hero-wrap">
-          <div class="stack">
-            <span class="pill"><span class="dot" aria-hidden="true"></span>Contact</span>
-            <p class="kicker">Let’s talk</p>
-            <h1 class="h1">Tell us what you’re building.</h1>
-            <p class="lead">Send a short message and we’ll respond with next steps and a quick estimate.</p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="mailto:hello@wowtex.com?subject=Project%20Inquiry">Email: hello@wowtex.com</a>
-              <a class="btn btn-ghost" href="services.html">View services</a>
-            </div>
-          </div>
-
-          <aside class="hero-card" aria-label="Quick notes">
-            <p class="kicker">Good to include</p>
-            <ul class="muted" style="margin: 0; padding-left: 18px">
-              <li>Your business and goals</li>
-              <li>Which service you need</li>
-              <li>Examples you like (optional)</li>
-              <li>Timeline and budget range (optional)</li>
-            </ul>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section" aria-label="Message builder">
-        <div class="container">
-          <div class="split">
-            <div class="stack" style="max-width: 70ch">
-              <p class="kicker">Message builder</p>
-              <h2 class="h2">Prefer a quick template?</h2>
-              <p class="lead">Fill this in and your email app will open with a ready-to-send message.</p>
-            </div>
-            <div>
-              <a class="btn" href="mailto:hello@wowtex.com?subject=Project%20Inquiry">Open email app</a>
-            </div>
-          </div>
-
-          <div class="grid grid-2" style="margin-top: 18px">
-            <form class="card" data-mailto-form data-mailto="hello@wowtex.com">
-              <div class="card-body stack">
-                <div class="field">
-                  <label for="name">Name</label>
-                  <input id="name" name="name" autocomplete="name" placeholder="Your name" />
-                </div>
-                <div class="field">
-                  <label for="company">Company (optional)</label>
-                  <input id="company" name="company" autocomplete="organization" placeholder="Your company" />
-                </div>
-                <div class="field">
-                  <label for="service">Service</label>
-                  <input id="service" name="service" placeholder="Website Development / App Development / Graphic Design" />
-                </div>
-                <div class="field">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" rows="6" placeholder="Describe what you want to build…"></textarea>
-                </div>
-                <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center">
-                  <button class="btn btn-primary" type="submit">Build email</button>
-                  <a class="btn btn-ghost" href="mailto:hello@wowtex.com">Just email</a>
-                </div>
-                <p class="muted" style="margin: 0; font-size: 13px">
-                  Note: this uses a simple <code style="font-family: var(--mono)">mailto:</code> link so it works on any static host.
-                </p>
-              </div>
-            </form>
-
-            <div class="card">
-              <div class="card-body stack">
-                <h3 class="card-title">Direct contact</h3>
-                <p class="card-text">Email is the fastest way to reach us.</p>
-                <div class="stack">
-                  <div class="metric">
-                    <strong>Email</strong>
-                    <span><a href="mailto:hello@wowtex.com">hello@wowtex.com</a></span>
-                  </div>
-                  <div class="metric">
-                    <strong>Response time</strong>
-                    <span>Typically within 24–48 hours</span>
-                  </div>
-                  <div class="metric">
-                    <strong>Services</strong>
-                    <span>Websites • Apps • Graphic Design</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="stack">
-          <div class="brand">
-            <span class="brand-mark" aria-hidden="true">W</span>
-            <span class="brand-name">Wow Tex</span>
-          </div>
-          <p class="muted" style="margin: 0">Websites, apps, and graphic design for modern startups.</p>
-          <p class="fineprint" style="margin: 0">Email: <a href="mailto:hello@wowtex.com">hello@wowtex.com</a></p>
-        </div>
-        <div class="stack">
-          <strong>Pages</strong>
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div class="stack">
-          <strong>Services</strong>
-          <a href="services.html#website-development">Website development</a>
-          <a href="services.html#app-development">App development</a>
-          <a href="services.html#graphic-design">Graphic design</a>
-        </div>
+      <div class="stack">
+        <strong>Pages</strong>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </div>
-      <div class="container fineprint">
-        © <span id="year"></span> Wow Tex. All rights reserved.
+      <div class="stack">
+        <strong>Services</strong>
+        <a href="services.html#website-development">Website development</a>
+        <a href="services.html#app-development">App development</a>
+        <a href="services.html#graphic-design">Graphic design</a>
       </div>
-      <script>
-        document.getElementById("year").textContent = String(new Date().getFullYear());
-      </script>
-    </footer>
-  </body>
+    </div>
+    <div class="container fineprint">
+      © <span id="year"></span> Wow Tex. All rights reserved.
+    </div>
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </footer>
+</body>
+
 </html>
