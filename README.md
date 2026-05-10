@@ -20,9 +20,16 @@ npm run dev
 
 Open `http://localhost:3000`.
 
+If your machine hits file-watcher limits (`EMFILE: too many open files, watch`), run:
+
+```bash
+npm run dev:polling
+```
+
 ## Scripts
 
-- `npm run dev` - run development server
+- `npm run dev` - run development server (localhost-bound for stability)
+- `npm run dev:polling` - fallback dev mode for systems with watcher limit errors
 - `npm run build` - production build + static export output
 - `npm run lint` - ESLint
 - `npm run typecheck` - TypeScript checks
