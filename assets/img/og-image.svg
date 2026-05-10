@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#101b33"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="220" cy="120" r="260" fill="url(#g)" opacity="0.18"/>
+  <circle cx="980" cy="90" r="280" fill="url(#g)" opacity="0.14"/>
+  <circle cx="930" cy="560" r="320" fill="url(#g)" opacity="0.12"/>
+
+  <g transform="translate(96 120)">
+    <rect x="0" y="0" width="92" height="92" rx="22" fill="url(#g)" opacity="0.28"/>
+    <rect x="0" y="0" width="92" height="92" rx="22" fill="none" stroke="rgba(232,238,255,0.22)" stroke-width="2"/>
+    <text x="46" y="60" text-anchor="middle" font-size="54" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" fill="#e8eeff" font-weight="800">W</text>
+  </g>
+
+  <text x="96" y="290" font-size="74" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" fill="#e8eeff" font-weight="800">Wow Tex</text>
+  <text x="96" y="360" font-size="34" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" fill="rgba(232,238,255,0.78)">
+    Websites " Apps " Graphic Design
+  </text>
+  <text x="96" y="430" font-size="26" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" fill="rgba(232,238,255,0.68)">
+    Modern. Responsive. Lightweight.
+  </text>
+</svg>
