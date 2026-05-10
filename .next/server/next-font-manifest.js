@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/akib/Documents/GitHub/wowtex/src/app/layout\":[\"static/media/b957ea75a84b6ea7-s.p.woff2\",\"static/media/7db6c35d839a711c-s.p.woff2\",\"static/media/1e41be92c43b3255-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{},\"appUsingSizeAdjust\":false,\"pagesUsingSizeAdjust\":false}"

@@ -1,16 +1,18 @@
 import type { NextConfig } from "next";
 
-const isGithubPages = process.env.GITHUB_ACTIONS || process.env.NODE_ENV === "production";
+const isGithubActions = process.env.GITHUB_ACTIONS === "true";
 const repoName = "wowtex";
 
 const nextConfig: NextConfig = {
-  output: "export",
-  trailingSlash: true,
+  // Optional: Vercel supports standard Next.js out of the box. 
+  // You can remove `output: "export"` if you want to use Next.js Image Optimization or Server Components on Vercel.
+  // output: "export", 
+  
   images: {
     unoptimized: true
   },
-  basePath: isGithubPages ? `/${repoName}` : "",
-  assetPrefix: isGithubPages ? `/${repoName}/` : ""
+  basePath: isGithubActions ? `/${repoName}` : "",
+  assetPrefix: isGithubActions ? `/${repoName}/` : ""
 };
 
 export default nextConfig;
