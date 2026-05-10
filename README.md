@@ -1,70 +1,52 @@
-# Wow Tex Premium Marketing Website
+# Wow Tex — Static Website (No Frameworks)
 
-Premium, futuristic SaaS-style marketing website built with Next.js 15, TypeScript, Tailwind CSS, Framer Motion, GSAP, and Lenis.
+Modern, responsive, lightweight static website for **Wow Tex** built with:
 
-## Stack
+- HTML5
+- CSS3
+- Vanilla JavaScript
 
-- Next.js 15 (App Router, static export ready)
-- TypeScript
-- Tailwind CSS
-- Framer Motion + GSAP
-- Lenis smooth scroll
-- Lucide React + React Icons
+No frameworks, no build tools, no dependencies.
 
-## Local Development
+## Pages
+
+- `index.html`
+- `services.html`
+- `about.html`
+- `contact.html`
+- `404.html`
+
+Assets:
+
+- `assets/css/styles.css`
+- `assets/js/main.js`
+- `assets/img/`
+
+## Edit content
+
+Open any `.html` file and edit the text directly. The sections are intentionally simple and consistent.
+
+Common edits:
+
+- **Brand name / email**: search for `Wow Tex` and `hello@wowtex.com`
+- **Services copy**: `services.html`
+- **Homepage hero + tiles**: `index.html`
+
+## Run locally
+
+Any static server works. For example:
 
 ```bash
-npm install
-npm run dev
+python3 -m http.server 5173
 ```
 
-Open `http://localhost:3000`.
+Then open `http://localhost:5173`.
 
-If your machine hits file-watcher limits (`EMFILE: too many open files, watch`), run:
+## Deploy
 
-```bash
-npm run dev:polling
-```
+This repo is deployable as-is (just upload/publish the folder):
 
-## Scripts
-
-- `npm run dev` - run development server (localhost-bound for stability)
-- `npm run dev:polling` - fallback dev mode for systems with watcher limit errors
-- `npm run build` - production build + static export output
-- `npm run lint` - ESLint
-- `npm run typecheck` - TypeScript checks
-
-## Project Structure
-
-- `src/app` - routes and layout
-- `src/components` - reusable UI, layout, motion, effects, and section components
-- `src/data` - editable placeholder content
-- `src/lib` - site config, utilities, and animation hooks
-- `public` - static assets (portfolio placeholders, OG image)
-
-## Content Editing
-
-Update placeholder content in:
-
-- `src/data/content.ts` - services, stats, pricing, portfolio, testimonials, timeline, and team
-
-## Deployment (GitHub Pages)
-
-This project is configured with static export:
-
-- `output: "export"` in `next.config.ts`
-- GitHub Pages compatible `basePath` and `assetPrefix` when running in GitHub Actions
-- `images.unoptimized: true` for static hosting
-
-Typical deploy flow:
-
-1. Push repository to GitHub.
-2. Build in CI with `npm ci && npm run build`.
-3. Publish `out/` directory to GitHub Pages.
-
-## Accessibility and Performance Notes
-
-- Semantic layout with keyboard-focusable controls
-- Strong dark-theme contrast with visible focus states
-- Motion via reusable wrappers with progressive enhancement
-- Static export and lightweight SVG placeholders for fast loads
+- **Netlify**: set publish directory to the repo root
+- **GitHub Pages**: publish from the root (or `/docs` if you choose to move files)
+- **Vercel static hosting**: deploy as a static site (no build command required)
+- **Shared hosting**: upload files via FTP/cPanel
