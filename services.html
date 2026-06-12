@@ -5,17 +5,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="Wow Tex services: website development, app development, and graphic design. Modern, responsive, lightweight builds." />
-  <title>Services — Wow Tex</title>
+    content="WowTex services: web development, mobile apps, AI & ML, cloud & DevOps, UI/UX design, and digital strategy for startups and enterprises." />
+  <title>Services — WowTex</title>
 
-  <meta property="og:title" content="Services — Wow Tex" />
+  <meta property="og:title" content="Services — WowTex" />
   <meta property="og:description"
-    content="Website development, app development, and graphic design—crafted for speed and clarity." />
+    content="Six tech services to power your growth — from web development to AI solutions." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="./services.html" />
   <meta property="og:image" content="assets/img/og-image.png" />
-  <meta name="theme-color" content="#fafbfc" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#0c1222" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#fffaf0" />
 
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="icon" href="assets/img/favicon.png" type="image/png" />
@@ -23,11 +22,11 @@
 </head>
 
 <body>
-  <header class="site-header">
+  <!-- ── Top Navigation ── -->
+  <header class="site-header" id="site-header">
     <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Wow Tex home">
-        <img class="brand-img" src="assets/img/wowtex.png" width="36" height="36" alt="" />
-
+      <a class="brand" href="index.html" aria-label="WowTex home">
+        <img class="brand-img" src="assets/img/wowtex.png" width="120" height="32" alt="WowTex logo" />
       </a>
 
       <nav aria-label="Primary">
@@ -35,7 +34,7 @@
           <span aria-hidden="true"></span>
         </button>
 
-        <div class="nav-links" data-nav-links>
+        <div class="nav-center" data-nav-links>
           <a href="index.html" data-nav>Home</a>
           <a href="services.html" data-nav>Services</a>
           <a href="about.html" data-nav>About</a>
@@ -44,228 +43,281 @@
       </nav>
 
       <div class="nav-actions">
-        <a class="btn btn-primary" href="contact.html">Get a quote</a>
+        <a class="btn btn-text" href="mailto:wowtexbd@gmail.com">Sign in</a>
+        <a class="btn btn-primary" href="contact.html">Get started</a>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-wrap">
-        <div class="stack">
-          <span class="pill"><span class="dot" aria-hidden="true"></span>Services</span>
-          <p class="kicker">What we do</p>
-          <h1 class="h1">Design + build services that keep things simple, fast, and modern.</h1>
+    <!-- ── Hero ── -->
+    <section class="hero" id="services-hero">
+      <div class="container">
+        <div class="hero-content" style="max-width: 65ch;" data-reveal>
+          <span class="badge-pill">
+            <span class="badge-dot" aria-hidden="true"></span>
+            6 core services
+          </span>
+          <h1 style="font-size: clamp(36px, 5vw, 56px); letter-spacing: -2px;">
+            Tech solutions crafted for growth.
+          </h1>
           <p class="lead">
-            Choose a single service or mix them into a complete launch package—website + app + brand visuals.
+            Choose a single service or combine them into a full launch package.
+            Every engagement comes with clear scope, predictable timelines, and premium execution.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="contact.html">Start a project</a>
-            <a class="btn btn-ghost" href="index.html">Back to home</a>
+            <a class="btn btn-primary" href="contact.html" id="services-hero-cta">Start a project</a>
+            <a class="btn btn-secondary" href="index.html" id="services-hero-home">Back to home</a>
           </div>
         </div>
-        <aside class="hero-aside" aria-label="Best for">
-          <p class="kicker">Best for</p>
-          <p class="lead" style="margin: 0">
-            New businesses, startups, creators, and teams who want clean UX, great visuals, and performance-first
-            delivery.
-          </p>
-        </aside>
       </div>
     </section>
 
-    <section class="section section--band" id="website-development" aria-label="Website development">
-      <div class="container">
-        <div class="split">
-          <div class="stack" style="max-width: 70ch">
-            <p class="kicker">Website development</p>
-            <h2 class="h2">Landing pages and business websites that convert.</h2>
-            <p class="lead">
-              Modern layout, crisp typography, and fast-loading static pages that are easy to deploy and easy to
-              maintain.
+    <!-- ── Service 1: Web Development (Pink) ── -->
+    <section class="section" id="web-development" aria-label="Web Development">
+      <div class="container" data-reveal>
+        <div class="service-detail service-detail--pink">
+          <div class="service-info">
+            <p class="caption-uppercase" style="color: rgba(255,255,255,0.7);">01 — Web Development</p>
+            <h2 class="display-sm" style="color: var(--on-primary);">Landing pages, business sites, and e-commerce platforms that convert.</h2>
+            <p style="color: rgba(255,255,255,0.85); font-size: 16px; line-height: 1.55;">
+              Modern layouts, crisp typography, and blazing-fast static pages that are easy to deploy and maintain.
+              We build everything from single-page marketing sites to full-featured e-commerce platforms.
             </p>
+            <a class="btn btn-on-color" href="contact.html" id="service-web-cta" style="margin-top: 8px; width: fit-content;">
+              Discuss your website →
+            </a>
           </div>
-          <div>
-            <a class="btn btn-primary" href="mailto:wowtexbd@gmail.com?subject=Website%20Development%20Inquiry">Email
-              about websites</a>
+          <div class="service-deliverables">
+            <h3 style="color: rgba(255,255,255,0.7);">Deliverables</h3>
+            <ul class="deliverable-list">
+              <li>Responsive design (mobile → desktop)</li>
+              <li>SEO-optimized structure & metadata</li>
+              <li>CMS integration (WordPress, Strapi, Sanity)</li>
+              <li>E-commerce setup (Shopify, WooCommerce)</li>
+              <li>Performance optimization & Core Web Vitals</li>
+              <li>Static hosting deployment (Netlify, Vercel, cPanel)</li>
+            </ul>
           </div>
-        </div>
-
-        <div class="grid grid-3" style="margin-top: 18px">
-          <article class="card">
-            <div class="card-body">
-              <h3 class="card-title">What’s included</h3>
-              <ul>
-                <li>Responsive design (mobile → desktop)</li>
-                <li>Accessible components + focus states</li>
-                <li>SEO essentials (titles, meta, sitemap)</li>
-              </ul>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-body">
-              <h3 class="card-title">Pages</h3>
-              <ul>
-                <li>Home, About, Services, Contact</li>
-                <li>Portfolio / Case studies (optional)</li>
-                <li>404 page for static hosting</li>
-              </ul>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-body">
-              <h3 class="card-title">Delivery</h3>
-              <ul>
-                <li>Static files: HTML/CSS/JS</li>
-                <li>Deploy to Netlify, GitHub Pages, Vercel static</li>
-                <li>Easy edits—no tooling required</li>
-              </ul>
-            </div>
-          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="app-development" aria-label="App development">
-      <div class="container">
-        <div class="split">
-          <div class="stack" style="max-width: 70ch">
-            <p class="kicker">App development</p>
-            <h2 class="h2">Build MVPs and internal tools that are reliable.</h2>
-            <p class="lead">
-              We focus on clear UX, clean architecture, and shipping in iterations so you can validate quickly.
+    <!-- ── Service 2: Mobile App Development (Teal) ── -->
+    <section class="section" id="mobile-apps" aria-label="Mobile App Development">
+      <div class="container" data-reveal>
+        <div class="service-detail service-detail--teal">
+          <div class="service-info">
+            <p class="caption-uppercase" style="color: rgba(255,255,255,0.7);">02 — Mobile Apps</p>
+            <h2 class="display-sm" style="color: var(--on-dark);">Native and cross-platform apps for iOS & Android.</h2>
+            <p style="color: rgba(255,255,255,0.85); font-size: 16px; line-height: 1.55;">
+              From MVPs to full-scale production apps. We use Flutter and React Native for cross-platform efficiency,
+              or go native when the project demands it.
             </p>
+            <a class="btn btn-on-color" href="contact.html" id="service-mobile-cta" style="margin-top: 8px; width: fit-content;">
+              Discuss your app →
+            </a>
           </div>
-          <div>
-            <a class="btn btn-primary" href="mailto:wowtexbd@gmail.com?subject=App%20Development%20Inquiry">Email about
-              apps</a>
+          <div class="service-deliverables">
+            <h3 style="color: rgba(255,255,255,0.7);">Deliverables</h3>
+            <ul class="deliverable-list">
+              <li>Cross-platform apps (Flutter, React Native)</li>
+              <li>Native iOS (Swift) & Android (Kotlin)</li>
+              <li>App Store & Play Store submission</li>
+              <li>Push notifications & analytics</li>
+              <li>API integration & backend setup</li>
+              <li>Post-launch support & updates</li>
+            </ul>
           </div>
-        </div>
-
-        <div class="grid grid-2" style="margin-top: 18px">
-          <article class="card">
-            <div class="card-body">
-              <h3 class="card-title">Common builds</h3>
-              <ul>
-                <li>Dashboards & admin panels</li>
-                <li>Customer portals</li>
-                <li>Booking / ordering flows</li>
-              </ul>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-body">
-              <h3 class="card-title">How we work</h3>
-              <ul>
-                <li>Scope → prototype → build → launch</li>
-                <li>Simple milestones and clear handoff</li>
-                <li>Support and improvements after launch</li>
-              </ul>
-            </div>
-          </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--band" id="graphic-design" aria-label="Graphic design">
-      <div class="container">
-        <div class="split">
-          <div class="stack" style="max-width: 70ch">
-            <p class="kicker">Graphic design</p>
-            <h2 class="h2">Visual identity that feels premium and consistent.</h2>
-            <p class="lead">
-              From logos and brand guides to social creatives—design that supports your product and marketing.
+    <!-- ── Service 3: AI & Machine Learning (Lavender) ── -->
+    <section class="section" id="ai-ml" aria-label="AI & Machine Learning">
+      <div class="container" data-reveal>
+        <div class="service-detail service-detail--lavender">
+          <div class="service-info">
+            <p class="caption-uppercase" style="color: var(--body);">03 — AI & Machine Learning</p>
+            <h2 class="display-sm">Intelligent solutions from chatbots to predictive models.</h2>
+            <p style="font-size: 16px; line-height: 1.55; color: var(--body);">
+              We build AI-powered features that integrate into your existing products — from natural language
+              processing to computer vision to custom ML pipelines.
             </p>
+            <a class="btn btn-primary" href="contact.html" id="service-ai-cta" style="margin-top: 8px; width: fit-content;">
+              Discuss AI solutions →
+            </a>
           </div>
-          <div>
-            <a class="btn btn-primary" href="mailto:wowtexbd@gmail.com?subject=Graphic%20Design%20Inquiry">Email about
-              design</a>
+          <div class="service-deliverables">
+            <h3>Deliverables</h3>
+            <ul class="deliverable-list">
+              <li>Custom ML model development</li>
+              <li>NLP & chatbot integrations</li>
+              <li>Computer vision solutions</li>
+              <li>Data pipeline automation</li>
+              <li>LLM integration & prompt engineering</li>
+              <li>Model deployment & monitoring</li>
+            </ul>
           </div>
-        </div>
-
-        <div class="grid grid-3" style="margin-top: 18px">
-          <article class="card">
-            <div class="card-body">
-              <h3 class="card-title">Brand</h3>
-              <ul>
-                <li>Logo system & variants</li>
-                <li>Color + typography direction</li>
-                <li>Brand guidelines (PDF-ready)</li>
-              </ul>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-body">
-              <h3 class="card-title">Marketing</h3>
-              <ul>
-                <li>Social media templates</li>
-                <li>Ads & promo banners</li>
-                <li>Pitch deck visuals</li>
-              </ul>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-body">
-              <h3 class="card-title">Product</h3>
-              <ul>
-                <li>UI assets and icons</li>
-                <li>Illustrations (optional)</li>
-                <li>Design handoff for dev</li>
-              </ul>
-            </div>
-          </article>
         </div>
       </div>
     </section>
 
+    <!-- ── Service 4: Cloud & DevOps (Peach) ── -->
+    <section class="section" id="cloud-devops" aria-label="Cloud & DevOps">
+      <div class="container" data-reveal>
+        <div class="service-detail service-detail--peach">
+          <div class="service-info">
+            <p class="caption-uppercase" style="color: var(--body);">04 — Cloud & DevOps</p>
+            <h2 class="display-sm">Scalable infrastructure that grows with you.</h2>
+            <p style="font-size: 16px; line-height: 1.55; color: var(--body);">
+              From AWS to GCP to Azure — we architect, deploy, and manage cloud infrastructure with CI/CD,
+              containerization, and 24/7 monitoring.
+            </p>
+            <a class="btn btn-primary" href="contact.html" id="service-cloud-cta" style="margin-top: 8px; width: fit-content;">
+              Discuss cloud setup →
+            </a>
+          </div>
+          <div class="service-deliverables">
+            <h3>Deliverables</h3>
+            <ul class="deliverable-list">
+              <li>Cloud architecture design (AWS, GCP, Azure)</li>
+              <li>CI/CD pipeline setup (GitHub Actions, Jenkins)</li>
+              <li>Docker & Kubernetes deployments</li>
+              <li>Infrastructure as Code (Terraform)</li>
+              <li>Monitoring & alerting (Datadog, Grafana)</li>
+              <li>Cost optimization & scaling strategies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Service 5: UI/UX Design (Ochre) ── -->
+    <section class="section" id="ui-ux-design" aria-label="UI/UX Design">
+      <div class="container" data-reveal>
+        <div class="service-detail service-detail--ochre">
+          <div class="service-info">
+            <p class="caption-uppercase" style="color: var(--body);">05 — UI/UX Design</p>
+            <h2 class="display-sm">Research-driven design that converts.</h2>
+            <p style="font-size: 16px; line-height: 1.55; color: var(--body);">
+              Beautiful interfaces grounded in real user research. We design wireframes, prototypes,
+              and complete design systems — from idea to pixel-perfect handoff.
+            </p>
+            <a class="btn btn-primary" href="contact.html" id="service-design-cta" style="margin-top: 8px; width: fit-content;">
+              Discuss design work →
+            </a>
+          </div>
+          <div class="service-deliverables">
+            <h3>Deliverables</h3>
+            <ul class="deliverable-list">
+              <li>User research & personas</li>
+              <li>Wireframing & information architecture</li>
+              <li>High-fidelity UI design (Figma)</li>
+              <li>Interactive prototypes</li>
+              <li>Design systems & component libraries</li>
+              <li>Developer handoff documentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Service 6: Digital Strategy (Cream) ── -->
+    <section class="section" id="digital-strategy" aria-label="Digital Strategy">
+      <div class="container" data-reveal>
+        <div class="service-detail service-detail--cream">
+          <div class="service-info">
+            <p class="caption-uppercase">06 — Digital Strategy</p>
+            <h2 class="display-sm">Growth consulting for your digital presence.</h2>
+            <p style="font-size: 16px; line-height: 1.55; color: var(--body);">
+              SEO, analytics, product roadmaps, and growth strategy — the strategic layer that
+              makes your technology investments pay off.
+            </p>
+            <a class="btn btn-primary" href="contact.html" id="service-strategy-cta" style="margin-top: 8px; width: fit-content;">
+              Discuss strategy →
+            </a>
+          </div>
+          <div class="service-deliverables">
+            <h3>Deliverables</h3>
+            <ul class="deliverable-list">
+              <li>SEO audit & content strategy</li>
+              <li>Analytics setup (GA4, Mixpanel)</li>
+              <li>Product roadmap & prioritization</li>
+              <li>Competitor analysis</li>
+              <li>Growth experiments & A/B testing</li>
+              <li>Quarterly performance reviews</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA Band ── -->
     <section class="section" aria-label="Call to action">
-      <div class="container">
-        <div class="cta-band split">
-          <div class="stack" style="max-width: 70ch">
-            <p class="kicker">Next step</p>
-            <h2 class="h2">Want a quick estimate?</h2>
-            <p class="lead">Send a short message with your goals and timeline and we’ll reply ASAP.</p>
-          </div>
-          <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center">
-            <a class="btn btn-primary" href="contact.html">Contact Wow Tex</a>
-            <a class="btn btn-ghost" href="mailto:wowtexbd@gmail.com?subject=Project%20Inquiry">Email directly</a>
+      <div class="container" data-reveal="scale">
+        <div class="cta-band">
+          <p class="section-label">Ready to start?</p>
+          <h2>Tell us what you're building.</h2>
+          <p class="lead">Send a short description and we'll reply with a plan, timeline, and estimate.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="contact.html" id="services-cta-contact">Contact WowTex</a>
+            <a class="btn btn-ghost" href="mailto:wowtexbd@gmail.com">Email directly</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- ── Footer ── -->
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div class="stack">
-        <div class="brand">
-          <img class="brand-img" src="assets/img/wowtex.png" width="36" height="36" alt="" />
-          <span class="brand-name">Wow Tex</span>
-        </div>
-        <p class="muted" style="margin: 0">Websites, apps, and graphic design for modern startups.</p>
-        <p class="fineprint" style="margin: 0">Email: <a href="mailto:wowtexbd@gmail.com">wowtexbd@gmail.com</a></p>
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="WowTex home">
+          <img class="brand-img" src="assets/img/wowtex.png" width="100" height="28" alt="WowTex" />
+        </a>
+        <p class="brand-desc">Bangladesh-based tech startup building websites, apps, and intelligent digital solutions for modern businesses.</p>
+        <p class="body-sm text-muted">
+          Email: <a href="mailto:wowtexbd@gmail.com" style="text-decoration: underline; text-underline-offset: 3px;">wowtexbd@gmail.com</a>
+        </p>
       </div>
-      <div class="stack">
-        <strong>Pages</strong>
+
+      <div class="footer-col">
+        <span class="footer-col-title">Pages</span>
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
-      <div class="stack">
-        <strong>Services</strong>
-        <a href="#website-development">Website development</a>
-        <a href="#app-development">App development</a>
-        <a href="#graphic-design">Graphic design</a>
+
+      <div class="footer-col">
+        <span class="footer-col-title">Services</span>
+        <a href="#web-development">Web Development</a>
+        <a href="#mobile-apps">Mobile Apps</a>
+        <a href="#ai-ml">AI & ML</a>
+        <a href="#cloud-devops">Cloud & DevOps</a>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-col-title">Products</span>
+        <a href="ledbanner/privacy-policy.html">LED Banner</a>
+        <a href="promptlab/privacy-policy.html">PromptLab</a>
+        <a href="gudamghor/privacy-policy.html">GudamGhor</a>
       </div>
     </div>
-    <div class="container fineprint">
-      © <span id="year"></span> Wow Tex. All rights reserved.
+
+    <div class="container footer-bottom">
+      <p class="footer-copyright">© <span id="year"></span> WowTex. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="ledbanner/privacy-policy.html">Privacy</a>
+        <a href="mailto:wowtexbd@gmail.com">Contact</a>
+      </div>
     </div>
-    <script>
-      document.getElementById("year").textContent = String(new Date().getFullYear());
-    </script>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
 </body>
 
 </html>

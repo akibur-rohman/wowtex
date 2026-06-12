@@ -5,17 +5,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="About Wow Tex — a tech startup delivering websites, apps, and graphic design with a performance-first mindset." />
-  <title>About — Wow Tex</title>
+    content="About WowTex — a Bangladesh-based tech startup delivering web, mobile, AI, and cloud solutions with a performance-first mindset." />
+  <title>About — WowTex</title>
 
-  <meta property="og:title" content="About — Wow Tex" />
+  <meta property="og:title" content="About — WowTex" />
   <meta property="og:description"
-    content="A small, focused team building modern digital experiences—fast, clean, and easy to deploy." />
+    content="A focused team in Bangladesh building modern digital experiences — fast, clean, and production-ready." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="./about.html" />
   <meta property="og:image" content="assets/img/og-image.png" />
-  <meta name="theme-color" content="#fafbfc" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#0c1222" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#fffaf0" />
 
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="icon" href="assets/img/favicon.png" type="image/png" />
@@ -23,11 +22,11 @@
 </head>
 
 <body>
-  <header class="site-header">
+  <!-- ── Top Navigation ── -->
+  <header class="site-header" id="site-header">
     <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Wow Tex home">
-        <img class="brand-img" src="assets/img/wowtex.png" width="36" height="36" alt="" />
-
+      <a class="brand" href="index.html" aria-label="WowTex home">
+        <img class="brand-img" src="assets/img/wowtex.png" width="120" height="32" alt="WowTex logo" />
       </a>
 
       <nav aria-label="Primary">
@@ -35,7 +34,7 @@
           <span aria-hidden="true"></span>
         </button>
 
-        <div class="nav-links" data-nav-links>
+        <div class="nav-center" data-nav-links>
           <a href="index.html" data-nav>Home</a>
           <a href="services.html" data-nav>Services</a>
           <a href="about.html" data-nav>About</a>
@@ -44,154 +43,235 @@
       </nav>
 
       <div class="nav-actions">
-        <a class="btn btn-primary" href="contact.html">Get a quote</a>
+        <a class="btn btn-text" href="mailto:wowtexbd@gmail.com">Sign in</a>
+        <a class="btn btn-primary" href="contact.html">Get started</a>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-wrap">
-        <div class="stack">
-          <span class="pill"><span class="dot" aria-hidden="true"></span>About</span>
-          <p class="kicker">Who we are</p>
-          <h1 class="h1">A small team focused on quality, speed, and clarity.</h1>
+    <!-- ── Hero ── -->
+    <section class="hero" id="about-hero">
+      <div class="container">
+        <div class="hero-content" style="max-width: 60ch;" data-reveal>
+          <span class="badge-pill">
+            <span class="badge-dot" aria-hidden="true"></span>
+            About us
+          </span>
+          <h1 style="font-size: clamp(36px, 5vw, 56px); letter-spacing: -2px;">
+            A small team with big ambitions, based in Bangladesh.
+          </h1>
           <p class="lead">
-            Wow Tex is a tech startup that helps clients design and ship websites, apps, and visuals that feel
-            premium—and perform.
+            WowTex is a tech startup that helps clients design and ship websites, apps, AI systems,
+            and cloud platforms that feel premium — and perform. We believe in clarity, speed, and quality.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="services.html">Our services</a>
-            <a class="btn btn-ghost" href="contact.html">Work with us</a>
+            <a class="btn btn-primary" href="services.html" id="about-hero-services">Our services</a>
+            <a class="btn btn-secondary" href="contact.html" id="about-hero-contact">Work with us</a>
           </div>
         </div>
-
-        <aside class="hero-aside" aria-label="Principles">
-          <p class="kicker">Principles</p>
-          <div class="stack">
-            <p class="lead" style="margin: 0"><strong>Simple beats complex.</strong> We avoid bloat and ship what
-              matters.</p>
-            <p class="lead" style="margin: 0"><strong>Performance is a feature.</strong> Fast loading and responsive by
-              default.</p>
-            <p class="lead" style="margin: 0"><strong>Design with intent.</strong> Every element supports clarity and
-              conversion.</p>
-          </div>
-        </aside>
       </div>
     </section>
 
-    <section class="section section--band" aria-label="Story">
+    <!-- ── Our Story ── -->
+    <section class="section section--soft" aria-label="Our story" id="our-story">
       <div class="container">
-        <p class="kicker">Our story</p>
-        <h2 class="h2">Built to help you launch confidently.</h2>
-        <div class="grid grid-2" style="margin-top: 18px">
-          <article class="card">
-            <div class="card-body">
+        <div class="grid grid-2" style="align-items: start; gap: 48px;">
+          <div data-reveal>
+            <p class="section-label">Our story</p>
+            <h2 class="display-sm" style="margin-top: 8px;">Built to help you launch confidently.</h2>
+            <p class="body-md text-muted" style="margin-top: 16px; max-width: 50ch;">
+              WowTex started with a simple idea: Bangladesh has world-class engineering talent, and
+              businesses everywhere deserve access to it. We founded WowTex to bridge that gap — delivering
+              Silicon Valley-quality work at competitive rates, with transparent communication and no time-zone excuses.
+            </p>
+            <p class="body-md text-muted" style="margin-top: 12px; max-width: 50ch;">
+              Today, we serve startups, SMEs, and enterprise clients across industries — from fintech to
+              e-commerce to healthcare. Every project gets the same treatment: clear scope, iterative delivery,
+              and code we're proud to hand over.
+            </p>
+          </div>
+
+          <div class="stack-lg" data-reveal="right">
+            <div class="content-card">
               <h3 class="card-title">What we believe</h3>
-              <p class="card-text">
-                A great digital presence is equal parts design, engineering, and communication. We keep projects calm
-                and predictable.
+              <p class="card-desc">
+                A great digital product is equal parts design, engineering, and communication.
+                We keep projects calm and predictable — no scope creep, no drama.
               </p>
-              <ul>
-                <li>Clear scope and timeline</li>
-                <li>Modern UI + clean code</li>
-                <li>Simple deployment and ownership</li>
-              </ul>
             </div>
-          </article>
-          <article class="card">
-            <div class="card-body">
+            <div class="content-card">
               <h3 class="card-title">How we help</h3>
-              <p class="card-text">
-                Whether you’re starting from scratch or improving what you have, we focus on results you can ship and
-                maintain.
+              <p class="card-desc">
+                Whether you're starting from scratch or improving what you have, we focus on results
+                you can ship and maintain. We're builders, not just vendors.
               </p>
-              <ul>
-                <li>Website design + static builds</li>
-                <li>App MVPs + UI refinement</li>
-                <li>Brand identity and marketing design</li>
-              </ul>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-label="Process">
-      <div class="container">
-        <p class="kicker">Process</p>
-        <h2 class="h2">A lightweight workflow that stays transparent.</h2>
-        <div class="grid grid-3" style="margin-top: 18px">
-          <article class="card">
-            <div class="card-body">
-              <h3 class="card-title">Discovery</h3>
-              <p class="card-text">Goals, audience, required pages/features, and a clear definition of done.</p>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-body">
-              <h3 class="card-title">Design</h3>
-              <p class="card-text">Wireframes → visual design with a mobile-first, modern look.</p>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-body">
-              <h3 class="card-title">Build & launch</h3>
-              <p class="card-text">Clean code, performance checks, and deployment to your preferred static host.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-label="Call to action">
-      <div class="container">
-        <div class="cta-band split">
-          <div class="stack" style="max-width: 70ch">
-            <p class="kicker">Let’s build</p>
-            <h2 class="h2">Need a website, an app, or visuals?</h2>
-            <p class="lead">Send a short description and we’ll respond with next steps.</p>
           </div>
-          <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center">
-            <a class="btn btn-primary" href="contact.html">Contact Wow Tex</a>
-            <a class="btn btn-ghost" href="mailto:wowtexbd@gmail.com?subject=Project%20Inquiry">Email directly</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Principles ── -->
+    <section class="section" aria-label="Principles" id="principles">
+      <div class="container">
+        <div class="text-center mx-auto" style="max-width: 50ch;" data-reveal>
+          <p class="section-label">Our principles</p>
+          <h2 class="display-md" style="margin-top: 8px;">Three values that drive every decision.</h2>
+        </div>
+
+        <div class="grid grid-3 mt-xl" data-reveal-stagger>
+          <div class="principle-card" data-reveal style="--stagger-index: 0">
+            <div class="principle-icon">⚡</div>
+            <h3>Simple beats complex</h3>
+            <p>We avoid bloat and over-engineering. The best solution is the simplest one that works reliably at scale.</p>
+          </div>
+          <div class="principle-card" data-reveal style="--stagger-index: 1">
+            <div class="principle-icon">🚀</div>
+            <h3>Performance is a feature</h3>
+            <p>Fast loading, responsive by default, and built for growth. We don't ship slow products — ever.</p>
+          </div>
+          <div class="principle-card" data-reveal style="--stagger-index: 2">
+            <div class="principle-icon">🎯</div>
+            <h3>Design with intent</h3>
+            <p>Every element supports clarity and conversion. We don't decorate — we design purposeful interfaces.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Stats ── -->
+    <section class="section section--soft" aria-label="Numbers" id="numbers">
+      <div class="container">
+        <div class="text-center mx-auto" style="max-width: 50ch;" data-reveal>
+          <p class="section-label">By the numbers</p>
+          <h2 class="display-md" style="margin-top: 8px;">Growing steadily, delivering consistently.</h2>
+        </div>
+
+        <div class="stats-grid mt-xl" data-reveal>
+          <div class="stat-item">
+            <div class="stat-number" data-count="50">0</div>
+            <div class="stat-label">Projects shipped</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="30">0</div>
+            <div class="stat-label">Clients served</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="6">0</div>
+            <div class="stat-label">Core services</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="3">0</div>
+            <div class="stat-label">Published apps</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Our Products ── -->
+    <section class="section" aria-label="Our products" id="products">
+      <div class="container">
+        <div class="split split--center" data-reveal>
+          <div>
+            <p class="section-label">Our products</p>
+            <h2 class="display-md" style="margin-top: 8px;">Apps we've built and published.</h2>
+            <p class="body-md text-muted" style="margin-top: 8px;">
+              Beyond client work, we build and publish our own digital products.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-3 mt-xl" data-reveal-stagger>
+          <div class="product-card" data-reveal style="--stagger-index: 0">
+            <span class="product-badge product-badge--live">Live</span>
+            <h3 class="product-name">LED Banner</h3>
+            <p class="product-desc">A scrolling LED text display app with customizable colors, fonts, and speeds. Perfect for events and signage.</p>
+            <a class="btn btn-ghost" href="ledbanner/privacy-policy.html" style="width: fit-content; padding: 8px 0;">Privacy Policy →</a>
+          </div>
+
+          <div class="product-card" data-reveal style="--stagger-index: 1">
+            <span class="product-badge product-badge--live">Live</span>
+            <h3 class="product-name">PromptLab</h3>
+            <p class="product-desc">An AI prompt management tool for power users. Organize, test, and share prompts across teams.</p>
+            <a class="btn btn-ghost" href="promptlab/privacy-policy.html" style="width: fit-content; padding: 8px 0;">Privacy Policy →</a>
+          </div>
+
+          <div class="product-card" data-reveal style="--stagger-index: 2">
+            <span class="product-badge product-badge--live">Live</span>
+            <h3 class="product-name">GudamGhor</h3>
+            <p class="product-desc">A lightweight inventory management system for small businesses in Bangladesh. Track stock, sales, and orders.</p>
+            <a class="btn btn-ghost" href="gudamghor/privacy-policy.html" style="width: fit-content; padding: 8px 0;">Privacy Policy →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA Band ── -->
+    <section class="section" aria-label="Call to action">
+      <div class="container" data-reveal="scale">
+        <div class="cta-band">
+          <p class="section-label">Let's build</p>
+          <h2>Need a website, an app, or a full tech stack?</h2>
+          <p class="lead">Send a short description and we'll respond with next steps and an estimate.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="contact.html" id="about-cta-contact">Contact WowTex</a>
+            <a class="btn btn-ghost" href="mailto:wowtexbd@gmail.com">Email directly</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- ── Footer ── -->
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div class="stack">
-        <div class="brand">
-          <img class="brand-img" src="assets/img/wowtex.png" width="36" height="36" alt="" />
-          <span class="brand-name">Wow Tex</span>
-        </div>
-        <p class="muted" style="margin: 0">Websites, apps, and graphic design for modern startups.</p>
-        <p class="fineprint" style="margin: 0">Email: <a href="mailto:wowtexbd@gmail.com">wowtexbd@gmail.com</a></p>
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="WowTex home">
+          <img class="brand-img" src="assets/img/wowtex.png" width="100" height="28" alt="WowTex" />
+        </a>
+        <p class="brand-desc">Bangladesh-based tech startup building websites, apps, and intelligent digital solutions for modern businesses.</p>
+        <p class="body-sm text-muted">
+          Email: <a href="mailto:wowtexbd@gmail.com" style="text-decoration: underline; text-underline-offset: 3px;">wowtexbd@gmail.com</a>
+        </p>
       </div>
-      <div class="stack">
-        <strong>Pages</strong>
+
+      <div class="footer-col">
+        <span class="footer-col-title">Pages</span>
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
-      <div class="stack">
-        <strong>Services</strong>
-        <a href="services.html#website-development">Website development</a>
-        <a href="services.html#app-development">App development</a>
-        <a href="services.html#graphic-design">Graphic design</a>
+
+      <div class="footer-col">
+        <span class="footer-col-title">Services</span>
+        <a href="services.html#web-development">Web Development</a>
+        <a href="services.html#mobile-apps">Mobile Apps</a>
+        <a href="services.html#ai-ml">AI & ML</a>
+        <a href="services.html#cloud-devops">Cloud & DevOps</a>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-col-title">Products</span>
+        <a href="ledbanner/privacy-policy.html">LED Banner</a>
+        <a href="promptlab/privacy-policy.html">PromptLab</a>
+        <a href="gudamghor/privacy-policy.html">GudamGhor</a>
       </div>
     </div>
-    <div class="container fineprint">
-      © <span id="year"></span> Wow Tex. All rights reserved.
+
+    <div class="container footer-bottom">
+      <p class="footer-copyright">© <span id="year"></span> WowTex. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="ledbanner/privacy-policy.html">Privacy</a>
+        <a href="mailto:wowtexbd@gmail.com">Contact</a>
+      </div>
     </div>
-    <script>
-      document.getElementById("year").textContent = String(new Date().getFullYear());
-    </script>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
 </body>
 
 </html>

@@ -5,17 +5,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="Wow Tex is a tech startup offering website development, app development, and graphic design—modern, fast, and conversion-focused." />
-  <title>Wow Tex — Your All in one Tech Partnet</title>
+    content="WowTex is a Bangladesh-based tech startup delivering web development, mobile apps, AI solutions, cloud infrastructure, UI/UX design, and digital strategy." />
+  <title>WowTex — Build Bold. Ship Smart.</title>
 
-  <meta property="og:title" content="Wow Tex — Your All in one Tech Partner" />
+  <meta property="og:title" content="WowTex — Build Bold. Ship Smart." />
   <meta property="og:description"
-    content="Modern, responsive, lightweight digital experiences—built fast and built right." />
+    content="Bangladesh-based tech startup crafting websites, apps, AI solutions, and digital products that perform." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="./" />
   <meta property="og:image" content="assets/img/og-image.png" />
-  <meta name="theme-color" content="#fafbfc" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#0c1222" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#fffaf0" />
 
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="icon" href="assets/img/favicon.png" type="image/png" />
@@ -23,10 +22,11 @@
 </head>
 
 <body>
-  <header class="site-header">
+  <!-- ── Top Navigation ── -->
+  <header class="site-header" id="site-header">
     <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Wow Tex home">
-        <img class="brand-img" src="assets/img/wowtex.png" width="30" height="30" alt="" />
+      <a class="brand" href="index.html" aria-label="WowTex home">
+        <img class="brand-img" src="assets/img/wowtex.png" width="120" height="32" alt="WowTex logo" />
       </a>
 
       <nav aria-label="Primary">
@@ -34,7 +34,7 @@
           <span aria-hidden="true"></span>
         </button>
 
-        <div class="nav-links" data-nav-links>
+        <div class="nav-center" data-nav-links>
           <a href="index.html" data-nav>Home</a>
           <a href="services.html" data-nav>Services</a>
           <a href="about.html" data-nav>About</a>
@@ -43,225 +43,319 @@
       </nav>
 
       <div class="nav-actions">
-        <a class="btn btn-primary" href="contact.html">Get a quote</a>
+        <a class="btn btn-text" href="mailto:wowtexbd@gmail.com">Sign in</a>
+        <a class="btn btn-primary" href="contact.html">Get started</a>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <!-- ── Hero ── -->
+    <section class="hero" id="hero">
       <div class="container hero-wrap">
-        <div class="stack" data-reveal>
-          <span class="tag">Website · App · Design</span>
-          <p class="kicker">Wow Tex</p>
-          <h1 class="h1">Launch a digital presence that feels current and stays fast.</h1>
+        <div class="hero-content" data-reveal>
+          <span class="badge-pill">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Based in Bangladesh
+          </span>
+          <h1>Build bold digital products with a team that ships.</h1>
           <p class="lead">
-            We build responsive websites, apps, and brand visuals with a flat, modern UI mindset—clarity first,
-            weightless delivery.
+            We design and engineer websites, mobile apps, AI systems, and cloud platforms —
+            crafted for startups and enterprises who want to move fast without cutting corners.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="services.html">Explore services</a>
-            <a class="btn btn-ghost" href="contact.html">Contact us</a>
+            <a class="btn btn-primary" href="services.html" id="hero-cta-services">Explore services</a>
+            <a class="btn btn-secondary" href="contact.html" id="hero-cta-contact">Contact us</a>
           </div>
-
-          <ul class="metric-list" aria-label="Highlights">
-            <li>
-              <span class="metric-dot" aria-hidden="true"></span>
-              <div>
-                <strong>Mobile-first</strong>
-                <span>Layouts that work from phone to desktop</span>
-              </div>
-            </li>
-            <li>
-              <span class="metric-dot" aria-hidden="true"></span>
-              <div>
-                <strong>Lightweight stack</strong>
-                <span>HTML, CSS, and minimal JavaScript</span>
-              </div>
-            </li>
-            <li>
-              <span class="metric-dot" aria-hidden="true"></span>
-              <div>
-                <strong>Deploy anywhere</strong>
-                <span>Static hosting—no build step required</span>
-              </div>
-            </li>
-          </ul>
         </div>
 
-        <div class="hero-visual" data-reveal>
-          <img class="hero-image" src="assets/img/hero-image.png" width="640" height="480"
-            alt="Wow Tex — digital products and design" decoding="async" fetchpriority="high" />
+        <div class="hero-visual" data-reveal="right">
+          <div class="hero-illustration">
+            <img src="assets/img/hero-image.png" width="640" height="480"
+              alt="WowTex — building digital products" decoding="async" fetchpriority="high" />
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--band" aria-label="Services" data-reveal>
+    <!-- ── Marquee / Trusted By ── -->
+    <div class="marquee-wrap" aria-label="Technologies and domains">
+      <div class="marquee-track" data-marquee>
+        <span class="marquee-item">Web Development</span>
+        <span class="marquee-item">Mobile Apps</span>
+        <span class="marquee-item">AI & Machine Learning</span>
+        <span class="marquee-item">Cloud & DevOps</span>
+        <span class="marquee-item">UI/UX Design</span>
+        <span class="marquee-item">Digital Strategy</span>
+        <span class="marquee-item">E-commerce</span>
+        <span class="marquee-item">SaaS Platforms</span>
+        <span class="marquee-item">Data Analytics</span>
+        <span class="marquee-item">API Integration</span>
+        <!-- Duplicated for seamless loop -->
+        <span class="marquee-item">Web Development</span>
+        <span class="marquee-item">Mobile Apps</span>
+        <span class="marquee-item">AI & Machine Learning</span>
+        <span class="marquee-item">Cloud & DevOps</span>
+        <span class="marquee-item">UI/UX Design</span>
+        <span class="marquee-item">Digital Strategy</span>
+        <span class="marquee-item">E-commerce</span>
+        <span class="marquee-item">SaaS Platforms</span>
+        <span class="marquee-item">Data Analytics</span>
+        <span class="marquee-item">API Integration</span>
+      </div>
+    </div>
+
+    <!-- ── Services Overview ── -->
+    <section class="section" aria-label="Services overview" id="services-overview">
       <div class="container">
-        <div class="split">
+        <div class="split split--center" data-reveal>
           <div>
-            <p class="kicker">Services</p>
-            <h2 class="h2">Three ways we can help.</h2>
-            <p class="lead">Combine them for a full launch, or start with one.</p>
+            <p class="section-label">What we do</p>
+            <h2 class="display-md" style="margin-top: 8px;">Six ways we can help you grow.</h2>
           </div>
-          <div>
-            <a class="btn" href="services.html">All services</a>
-          </div>
+          <a class="btn btn-secondary" href="services.html" id="services-overview-cta">All services</a>
         </div>
 
-        <div class="grid grid-3 mt-lg">
-          <article class="card">
-            <div class="card-body">
-              <h3 class="card-title">Website development</h3>
-              <p class="card-text">Landing pages and company sites—fast, semantic, easy to edit.</p>
-              <ul>
-                <li>Responsive layouts</li>
-                <li>SEO-friendly structure</li>
-                <li>Static deploys</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-body">
-              <h3 class="card-title">App development</h3>
-              <p class="card-text">MVPs and tools with dependable UX and iterative delivery.</p>
-              <ul>
-                <li>Web apps & dashboards</li>
-                <li>Integrations</li>
-                <li>Clear milestones</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-body">
-              <h3 class="card-title">Graphic design</h3>
-              <p class="card-text">Brand and marketing design that stays consistent everywhere.</p>
-              <ul>
-                <li>Identity & guidelines</li>
-                <li>Social & ads</li>
-                <li>UI-ready assets</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-label="What we deliver" data-reveal>
-      <div class="container">
-        <p class="kicker">Deliverables</p>
-        <h2 class="h2">What you can ship with us.</h2>
-        <p class="lead">No image galleries—just clear outcomes. Pick what fits your roadmap.</p>
-
-        <ul class="simple-list mt-lg">
-          <li>
-            <span class="sl-title">Marketing site</span>
-            <span class="sl-desc">Static pages, fast load, easy updates</span>
-          </li>
-          <li>
-            <span class="sl-title">Product UI</span>
-            <span class="sl-desc">Dashboards, flows, and handoff-ready layouts</span>
-          </li>
-          <li>
-            <span class="sl-title">Brand system</span>
-            <span class="sl-desc">Logo, colors, type, and templates</span>
-          </li>
-          <li>
-            <span class="sl-title">Launch support</span>
-            <span class="sl-desc">Netlify, GitHub Pages, Vercel, or shared hosting</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section section--band" aria-label="Process" data-reveal>
-      <div class="container">
-        <p class="kicker">Process</p>
-        <h2 class="h2">From idea to launch—straightforward steps.</h2>
-
-        <div class="steps mt-lg">
-          <div class="step">
-            <div class="step-num" aria-hidden="true">1</div>
-            <div>
-              <h3>Discovery</h3>
-              <p>Goals, audience, and scope—so timelines and deliverables stay predictable.</p>
-            </div>
+        <div class="grid grid-3 mt-xl" data-reveal-stagger>
+          <div class="feature-card feature-card--pink" data-reveal style="--stagger-index: 0">
+            <div class="card-icon">🌐</div>
+            <h3 class="card-title">Web Development</h3>
+            <p class="card-desc">Landing pages, business sites, and e-commerce platforms — responsive, fast, SEO-ready.</p>
+            <ul class="card-list">
+              <li>Static & dynamic sites</li>
+              <li>CMS integration</li>
+              <li>Performance optimization</li>
+            </ul>
           </div>
-          <div class="step">
-            <div class="step-num" aria-hidden="true">2</div>
-            <div>
-              <h3>Design</h3>
-              <p>Flat, readable UI with a mobile-first layout and your brand voice.</p>
-            </div>
+
+          <div class="feature-card feature-card--teal" data-reveal style="--stagger-index: 1">
+            <div class="card-icon">📱</div>
+            <h3 class="card-title">Mobile App Development</h3>
+            <p class="card-desc">Native and cross-platform apps for iOS and Android — from MVPs to full-scale products.</p>
+            <ul class="card-list">
+              <li>Flutter & React Native</li>
+              <li>Native iOS & Android</li>
+              <li>App Store deployment</li>
+            </ul>
           </div>
-          <div class="step">
-            <div class="step-num" aria-hidden="true">3</div>
-            <div>
-              <h3>Build</h3>
-              <p>Clean markup and lean scripts—performance and accessibility baked in.</p>
-            </div>
+
+          <div class="feature-card feature-card--lavender" data-reveal style="--stagger-index: 2">
+            <div class="card-icon">🤖</div>
+            <h3 class="card-title">AI & Machine Learning</h3>
+            <p class="card-desc">Intelligent solutions — from chatbots and NLP to predictive models and data pipelines.</p>
+            <ul class="card-list">
+              <li>Custom ML models</li>
+              <li>NLP & chatbots</li>
+              <li>Data pipeline automation</li>
+            </ul>
           </div>
-          <div class="step">
-            <div class="step-num" aria-hidden="true">4</div>
-            <div>
-              <h3>Launch</h3>
-              <p>Ship to your host of choice and keep editing without heavy tooling.</p>
-            </div>
+
+          <div class="feature-card feature-card--peach" data-reveal style="--stagger-index: 3">
+            <div class="card-icon">☁️</div>
+            <h3 class="card-title">Cloud & DevOps</h3>
+            <p class="card-desc">Scalable infrastructure on AWS, GCP, and Azure — CI/CD, containers, and monitoring.</p>
+            <ul class="card-list">
+              <li>Cloud architecture</li>
+              <li>CI/CD pipelines</li>
+              <li>Monitoring & alerts</li>
+            </ul>
+          </div>
+
+          <div class="feature-card feature-card--ochre" data-reveal style="--stagger-index: 4">
+            <div class="card-icon">🎨</div>
+            <h3 class="card-title">UI/UX Design</h3>
+            <p class="card-desc">Research-driven design — wireframes, prototypes, and design systems that convert.</p>
+            <ul class="card-list">
+              <li>User research & testing</li>
+              <li>High-fidelity prototypes</li>
+              <li>Design systems</li>
+            </ul>
+          </div>
+
+          <div class="feature-card feature-card--cream" data-reveal style="--stagger-index: 5">
+            <div class="card-icon">📈</div>
+            <h3 class="card-title">Digital Strategy</h3>
+            <p class="card-desc">SEO, analytics, growth consulting, and product roadmaps to accelerate your business.</p>
+            <ul class="card-list">
+              <li>SEO & content strategy</li>
+              <li>Analytics setup</li>
+              <li>Growth consulting</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-label="Call to action" data-reveal>
+    <!-- ── How We Work ── -->
+    <section class="section section--soft" aria-label="Process" id="process">
       <div class="container">
-        <div class="cta-band split">
-          <div class="stack" style="max-width: 52ch">
-            <p class="kicker">Next step</p>
-            <h2 class="h2">Tell us what you’re building.</h2>
-            <p class="lead">We’ll reply with a concise plan and estimate.</p>
+        <div class="text-center mx-auto" style="max-width: 50ch;" data-reveal>
+          <p class="section-label">How we work</p>
+          <h2 class="display-md" style="margin-top: 8px;">From idea to launch — four clear steps.</h2>
+          <p class="body-md text-muted" style="margin-top: 12px;">
+            We keep things transparent, iterative, and predictable. No surprises, no bloat.
+          </p>
+        </div>
+
+        <div class="steps-grid mt-xxl" data-reveal-stagger>
+          <div class="step-card" data-reveal style="--stagger-index: 0">
+            <span class="step-number">01</span>
+            <h3 class="step-title">Discovery</h3>
+            <p class="step-desc">We learn your goals, audience, and constraints. The outcome is a clear scope and realistic timeline.</p>
           </div>
-          <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center">
-            <a class="btn btn-primary" href="contact.html">Contact Wow Tex</a>
-            <a class="btn btn-ghost" href="services.html">Services</a>
+          <div class="step-card" data-reveal style="--stagger-index: 1">
+            <span class="step-number">02</span>
+            <h3 class="step-title">Design</h3>
+            <p class="step-desc">Wireframes and visual design — mobile-first, accessible, and aligned with your brand voice.</p>
+          </div>
+          <div class="step-card" data-reveal style="--stagger-index: 2">
+            <span class="step-number">03</span>
+            <h3 class="step-title">Build</h3>
+            <p class="step-desc">Clean code, iterative delivery, and performance baked in. We ship in milestones, not monoliths.</p>
+          </div>
+          <div class="step-card" data-reveal style="--stagger-index: 3">
+            <span class="step-number">04</span>
+            <h3 class="step-title">Launch & Support</h3>
+            <p class="step-desc">Deploy to your platform of choice. We stay on for optimization, monitoring, and growth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Stats ── -->
+    <section class="section" aria-label="Stats" id="stats">
+      <div class="container">
+        <div class="stats-grid" data-reveal>
+          <div class="stat-item">
+            <div class="stat-number" data-count="50">0</div>
+            <div class="stat-label">Projects delivered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="30">0</div>
+            <div class="stat-label">Happy clients</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="4">0</div>
+            <div class="stat-label">Years of experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="99">0</div>
+            <div class="stat-label">Client satisfaction %</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Testimonials ── -->
+    <section class="section section--soft" aria-label="Testimonials" id="testimonials">
+      <div class="container">
+        <div class="text-center mx-auto" style="max-width: 50ch;" data-reveal>
+          <p class="section-label">What clients say</p>
+          <h2 class="display-md" style="margin-top: 8px;">Real feedback from real partners.</h2>
+        </div>
+
+        <div class="grid grid-3 mt-xl" data-reveal-stagger>
+          <div class="testimonial-card" data-reveal style="--stagger-index: 0">
+            <p class="quote">WowTex built our entire SaaS dashboard from scratch. The team was fast, communicative, and the end result exceeded our expectations. Truly world-class work from Bangladesh.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">RA</div>
+              <div class="testimonial-info">
+                <span class="testimonial-name">Rafiq Ahmed</span>
+                <span class="testimonial-role">CEO, DataVault BD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-reveal style="--stagger-index: 1">
+            <p class="quote">They redesigned our mobile app and the user engagement jumped 40% in the first month. The attention to UX details was impressive — every interaction felt intentional.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SN</div>
+              <div class="testimonial-info">
+                <span class="testimonial-name">Sarah Nguyen</span>
+                <span class="testimonial-role">Product Lead, ShopEasy</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-reveal style="--stagger-index: 2">
+            <p class="quote">Our AI chatbot integration was delivered ahead of schedule. WowTex understood the technical requirements deeply and proposed solutions we hadn't even considered.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MH</div>
+              <div class="testimonial-info">
+                <span class="testimonial-name">Mohammad Hassan</span>
+                <span class="testimonial-role">CTO, FinTrack</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA Band ── -->
+    <section class="section" aria-label="Call to action" id="cta">
+      <div class="container" data-reveal="scale">
+        <div class="cta-band">
+          <p class="section-label">Next step</p>
+          <h2>Turn your next idea into reality today.</h2>
+          <p class="lead">Tell us what you're building. We'll reply with a concise plan and estimate — no obligation.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="contact.html" id="cta-contact">Start a project</a>
+            <a class="btn btn-ghost" href="services.html" id="cta-services">View services</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- ── Footer ── -->
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div class="stack">
-        <div class="brand">
-          <img class="brand-img" src="assets/img/wowtex.png" width="36" height="36" alt="" />
-          <span class="brand-name">Wow Tex</span>
-        </div>
-        <p class="muted" style="margin: 0">Websites, apps, and graphic design for modern teams.</p>
-        <p class="fineprint" style="margin: 0">Email: <a href="mailto:wowtexbd@gmail.com">wowtexbd@gmail.com</a></p>
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="WowTex home">
+          <img class="brand-img" src="assets/img/wowtex.png" width="100" height="28" alt="WowTex" />
+        </a>
+        <p class="brand-desc">Bangladesh-based tech startup building websites, apps, and intelligent digital solutions for modern businesses.</p>
+        <p class="body-sm text-muted">
+          Email: <a href="mailto:wowtexbd@gmail.com" style="text-decoration: underline; text-underline-offset: 3px;">wowtexbd@gmail.com</a>
+        </p>
       </div>
-      <div class="stack">
-        <strong class="kicker" style="margin-bottom: 4px">Pages</strong>
+
+      <div class="footer-col">
+        <span class="footer-col-title">Pages</span>
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
-      <div class="stack">
-        <strong class="kicker" style="margin-bottom: 4px">Services</strong>
-        <a href="services.html#website-development">Website development</a>
-        <a href="services.html#app-development">App development</a>
-        <a href="services.html#graphic-design">Graphic design</a>
+
+      <div class="footer-col">
+        <span class="footer-col-title">Services</span>
+        <a href="services.html#web-development">Web Development</a>
+        <a href="services.html#mobile-apps">Mobile Apps</a>
+        <a href="services.html#ai-ml">AI & ML</a>
+        <a href="services.html#cloud-devops">Cloud & DevOps</a>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-col-title">Products</span>
+        <a href="ledbanner/privacy-policy.html">LED Banner</a>
+        <a href="promptlab/privacy-policy.html">PromptLab</a>
+        <a href="gudamghor/privacy-policy.html">GudamGhor</a>
       </div>
     </div>
-    <div class="container fineprint">
-      © <span id="year"></span> Wow Tex. All rights reserved.
+
+    <div class="container footer-bottom">
+      <p class="footer-copyright">© <span id="year"></span> WowTex. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="ledbanner/privacy-policy.html">Privacy</a>
+        <a href="mailto:wowtexbd@gmail.com">Contact</a>
+      </div>
     </div>
-    <script>
-      document.getElementById("year").textContent = String(new Date().getFullYear());
-    </script>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
 </body>
 
 </html>
